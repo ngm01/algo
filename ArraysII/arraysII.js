@@ -1,5 +1,9 @@
 
+// Coding Dojo Algorithm Challenges
+// Chapter 7 --  Arrays, Part II (pp. 80-85)
+
 // 9/11/2017
+// Balance Index
 // Doesn't work :(
 function findBalanceIndex(arr){
   var sum = arr[0];
@@ -20,7 +24,7 @@ function findBalanceIndex(arr){
   return -1;
 }
 
-var test = [-2, 5, 7, 0, 1, 2];
+// var test = [-2, 5, 7, 0, 1, 2];
 // console.log(findBalanceIndex(test));
 
 // 9/12/2017
