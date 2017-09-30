@@ -5,24 +5,36 @@
 // 9/11/2017
 // Balance Index
 // Doesn't work :(
+
+// A) what is this trying to do?
+// "Return the balance index where sums are equal on either side (excluding it's own value).
+// Return -1 if none exist.
+// E.g. findBalanceIndex([-2, 5, 7, 0, 3]) => 2
+// findBalanceIndex([9,9]) => -1
+// B) T-diagram it. Why does it get stuck in a loop?
+
+// 9/30/2017: fixed. Doing algos at 6 PM on a Saturday night. What is my life.
 function findBalanceIndex(arr){
-  var sum = arr[0];
-  var sum2 = 0;
   
-  for (var i=1; i<arr.length; i++){
-    for (var k=1; k < i; k++){
-      sum += arr[k];
+  for (var i=1; i<arr.length - 1; i++){
+    var leftSum = 0;
+    var rightSum = 0;
+    for (var k=i-1; k >= 0; k--){
+      leftSum += arr[k];
     }
-    for (var m = i +1; k < arr.length; m++){
-      sum2 = arr[m];
+    for (var m = i +1; m < arr.length; m++){
+      rightSum += arr[m];
     }
-    console.log(i, k, m);
-    if(sum == sum2){
+    console.log("leftSum: " + leftSum);
+    console.log("rightSum: " + rightSum);
+    if(leftSum == rightSum){
       return i;
     }
   }
   return -1;
 }
+
+//console.log(findBalanceIndex([-1, 7, 55, -53, -3]));
 
 // var test = [-2, 5, 7, 0, 1, 2];
 // console.log(findBalanceIndex(test));
