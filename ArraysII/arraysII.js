@@ -13,7 +13,7 @@
 // findBalanceIndex([9,9]) => -1
 // B) T-diagram it. Why does it get stuck in a loop?
 
-// 9/30/2017: fixed. Doing algos at 6 PM on a Saturday night. What is my life.
+// 9/30/2017: fixed. Doing algos at 6:30 on a Saturday night. What is my life.
 function findBalanceIndex(arr){
   
   for (var i=1; i<arr.length - 1; i++){

@@ -1,7 +1,7 @@
 // Coding Dojo Algorithm Challenges
 // Chapter 9: Recursion (pp 96 - 106)
 // In-Order Subsets (p 101) 9/29/17
-// strSubsets("abc") => ['a', 'ab', 'abc', 'ac', 'b', 'bc', 'c']
+// strSubsets("abc") => ['', 'a', 'ab', 'abc', 'ac', 'b', 'bc', 'c']
 
 function strSubsets(str){
   var subsArr = [""];
