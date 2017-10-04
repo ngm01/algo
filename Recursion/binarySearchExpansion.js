@@ -7,7 +7,7 @@ function bSE(str){
   var idx = 0;
   var newStr = "";
   while(idx < str.length){
-    console.log("idx: " + idx);
+    //console.log("idx: " + idx);
     rBSE(str, newStr, idx, result)
     idx++;
   }
@@ -27,7 +27,7 @@ function rBSE(str, newStr, idx, result){
   else{
     if(str[idx] != "?"){
       newStr += str[idx];
-      console.log(newStr);
+      //console.log(newStr);
       idx++;
       rBSE(str, newStr, idx, result)
     }
